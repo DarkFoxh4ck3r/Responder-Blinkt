@@ -13,5 +13,13 @@
 ```
 pip install pyinotify
 ```
+
+## Install:
+
 * Copy monitor.py to /root/monitor.py
 * Copy the empty Responder.db.bck to /root/Responder/Responder.db
+* Edit /etc/rc.local and add before ```Exit 0``` :
+```
+# Start Monitor
+/usr/bin/screen -dmS monitor bash -c 'python /root/monitor.py'
+```
