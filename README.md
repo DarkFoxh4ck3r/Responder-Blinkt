@@ -23,3 +23,12 @@ pip install pyinotify
 # Start Monitor
 /usr/bin/screen -dmS monitor bash -c 'python /root/monitor.py'
 ```
+
+## Usage:
+
+** This will automatically shutdown the Pi Zero once the Responder.db has been modified.
+
+## Todo:
+
+** Add shutdown indication using Blinkt!
+** Add Network Traffic indication using Blinkt? (i.e. like the CPU usage demo)
